@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
     @OnClick(R.id.button)
     void onClick() {
         //this can also be done with a toggle button
-        Intent intent = new Intent(this, MapsActivity.class);
+        Intent intent = new Intent(this, SettingsActivity.class);
              startActivity(intent);
 
     }
