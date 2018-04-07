@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -8,9 +9,18 @@
         android:layout_height="50dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
+        android:layout_marginStart="150dp"
         android:layout_marginTop="18dp"
-        android:text="Share:"
+        android:text="Share!"
         android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="70dp"
+        android:textSize="16sp"
+        android:text="Item:"/>
 
     <EditText
         android:scrollbars="horizontal"
@@ -18,7 +28,16 @@
         android:layout_height="50dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="59dp" />
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="70dp"
+        android:textSize="16sp"
+        android:text="Due Date:"/>
 
     <EditText
         android:scrollbars="horizontal"
@@ -27,26 +46,27 @@
         android:layout_height="50dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"
-        android:layout_marginEnd="112dp" />
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="50dp"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"
-        android:layout_marginEnd="14dp"
-        android:text="Submit" />
+        android:layout_marginEnd="150dp"
+        android:text="Submit"
+        android:layout_marginTop="100dp"/>
 
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="87dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="58dp">
+        android:layout_marginTop="150dp">
 
-        <include
-            layout="@layout/share_page_element"/>
+        <include layout="@layout/share_page_element" />
     </ScrollView>
 
 </RelativeLayout>

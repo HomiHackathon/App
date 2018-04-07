@@ -26,9 +26,9 @@ public class MainActivity extends AppCompatActivity {
 //                ((TextView) findViewById(R.id.textView)).setText("Clicked");
 //            }
 //        });
-        setContentView(R.layout.activity_main);
+        //setContentView(R.layout.activity_main);
 
-        ButterKnife.bind(this);
+       // ButterKnife.bind(this);
     }
 //
 //    @OnClick(R.id.button)
