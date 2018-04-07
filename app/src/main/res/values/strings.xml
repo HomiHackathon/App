@@ -8,13 +8,12 @@
     <!-- Example General settings -->
     <string name="pref_header_general">Edit Profile</string>
 
-    <string name="pref_title_social_recommendations">Enable social recommendations</string>
-    <string name="pref_description_social_recommendations">Recommendations for people to contact
-        based on your message history
+    <string name="pref_title_social_recommendations">Enable location finder</string>
+    <string name="pref_description_social_recommendations">Allows for sharing and borrowing with those within a 25 mile radius
     </string>
 
-    <string name="pref_title_display_name">Display name</string>
-    <string name="pref_default_display_name">John Smith</string>
+    <string name="pref_title_display_name">E-mail</string>
+    <string name="pref_default_display_name">useremail@gmail.com</string>
 
     <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
     <string-array name="pref_example_list_titles">
@@ -166,4 +165,9 @@
     </string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_profile">ProfileActivity</string>
+
+    <!-- Profile Strings -->
+    <string name="user_name">Firstname Lastname</string>
+    <string name="miles">X miles away</string>
+    <string name="title_activity_maps">Map</string>
 </resources>

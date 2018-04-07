@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.util.Set;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -21,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.share_page);
+        setContentView(R.layout.activity_main);
 //
 //        findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -36,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
     @OnClick(R.id.button)
     void onClick() {
         //this can also be done with a toggle button
-        Intent intent = new Intent(this, ProfileActivity.class);
+        Intent intent = new Intent(this, MapsActivity.class);
              startActivity(intent);
 
     }
