@@ -1,29 +1,46 @@
+
 package com.kevinchristianson.myapplication;
 
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.PorterDuff;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
+import android.support.v4.content.ContextCompat;
+import android.support.v4.graphics.drawable.RoundedBitmapDrawable;
+import android.support.v4.graphics.drawable.RoundedBitmapDrawableFactory;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
 
 public class ProfileActivity extends AppCompatActivity {
+
+    ImageView mIcon;
+    Button mFollow;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_profile);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        setContentView(R.layout.activity_main);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
+        mIcon = findViewById(R.id.ivProfile);
+        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.steviep);
+        RoundedBitmapDrawable mDrawable = RoundedBitmapDrawableFactory.create(getResources(), bitmap);
+        mDrawable.setCircular(true);
+        mDrawable.setColorFilter(ContextCompat.getColor(ProfileActivity.this, R.color.colorAccent), PorterDuff.Mode.DST_OVER);
+        mIcon.setImageDrawable(mDrawable);
+
+        mFollow = findViewById(R.id.btnFollow);
+        mFollow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                if (mFollow.getText().toString().equalsIgnoreCase("Follow me")) {
+                    mFollow.setText("Following");
+                } else {
+                    mFollow.setText("Follow me");
+                }
             }
         });
-    }
 
+    }
 }

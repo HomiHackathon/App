@@ -15,7 +15,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:padding="5dp"
-        app:srcCompat="@drawable/homer" />
+        app:srcCompat="@drawable/steviep" />
 
     <TextView
         android:id="@+id/tvName"

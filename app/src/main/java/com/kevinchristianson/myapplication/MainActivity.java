@@ -1,3 +1,4 @@
+
 package com.kevinchristianson.myapplication;
 
 import android.content.Intent;
@@ -20,16 +21,23 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
+        setContentView(R.layout.share_page);
+//
+//        findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                ((TextView) findViewById(R.id.textView)).setText("Clicked");
+//            }
+//        });
+        //setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
     }
 
     @OnClick(R.id.button)
     void onClick() {
         //this can also be done with a toggle button
-        Intent intent = new Intent(this, SettingsActivity.class);
-        startActivity(intent);
+        Intent intent = new Intent(this, ProfileActivity.class);
+             startActivity(intent);
 
     }
 
