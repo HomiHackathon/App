@@ -6,18 +6,37 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
+
 public class MainActivity extends AppCompatActivity {
+
+    @BindView(R.id.textView)
+    TextView helloWorld;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.share_page);
+//
+//        findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                ((TextView) findViewById(R.id.textView)).setText("Clicked");
+//            }
+//        });
+        //setContentView(R.layout.activity_main);
 
-        findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                ((TextView) findViewById(R.id.textView)).setText("Clicked");
-            }
-        });
+       // ButterKnife.bind(this);
     }
+//
+//    @OnClick(R.id.button)
+//    void onClick() {
+//        //this can also be done with a toggle button
+//        if (helloWorld.getText().equals("Clicked"))
+//            helloWorld.setText("Hello World");
+//        else
+//            helloWorld.setText("Clicked");
+//    }
 }
