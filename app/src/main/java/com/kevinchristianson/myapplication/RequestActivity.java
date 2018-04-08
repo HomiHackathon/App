@@ -5,7 +5,13 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class RequestActivity {
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+public class RequestActivity extends AppCompatActivity {
 
     Button buttonborrow;
     EditText textItemBrrw;
@@ -13,7 +19,7 @@ public class RequestActivity {
     EditText textRadius;
     EditText textDaysBrrw;
 
-    DatabaseReference mRootRef = FireBaseDatabase.getInstance().getReference();
+    DatabaseReference mRootRef = FirebaseDatabase.getInstance().getReference();
     DatabaseReference mConditionRef = mRootRef.child("condition");
 
     @Override
