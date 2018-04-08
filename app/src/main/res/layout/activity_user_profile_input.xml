@@ -9,63 +9,85 @@
 
     <TextView
         android:id="@+id/textView1"
-        android:layout_width="match_parent"
+        android:layout_width="372dp"
         android:layout_height="43dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
+        android:layout_marginStart="12dp"
         android:layout_marginTop="18dp"
         android:text="First Name:" />
 
     <EditText
-        android:layout_width="150dp"
-        android:layout_height="69dp"
+        android:id="@+id/firstNameUser"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="10dp" />
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="33dp" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="match_parent"
+        android:layout_width="370dp"
         android:layout_height="56dp"
         android:layout_above="@+id/textView3"
         android:layout_alignParentStart="true"
+        android:layout_marginStart="14dp"
         android:text="Last Name:" />
 
     <EditText
-        android:layout_width="150dp"
-        android:layout_height="59dp"
+        android:id="@+id/lastNameUser"
+        android:layout_width="132dp"
+        android:layout_height="35dp"
         android:layout_alignParentStart="true"
-        android:layout_alignTop="@+id/textView2" />
+        android:layout_alignTop="@+id/textView2"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="24dp" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="match_parent"
+        android:layout_width="369dp"
         android:layout_height="56dp"
         android:layout_above="@+id/textView4"
         android:layout_alignParentStart="true"
         android:layout_marginBottom="-190dp"
+        android:layout_marginStart="15dp"
         android:text="College (if applicable):" />
 
     <EditText
+        android:id="@+id/birthdayUser"
         android:layout_width="150dp"
-        android:layout_height="80dp"
+        android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/textView4"
-        android:layout_alignParentStart="true" />
+        android:layout_alignStart="@+id/textView1" />
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="match_parent"
+        android:layout_width="370dp"
         android:layout_height="60dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
+        android:layout_marginStart="14dp"
         android:layout_marginTop="190dp"
         android:text="Date of Birth:" />
 
     <EditText
-        android:layout_width="150dp"
-        android:layout_height="60dp"
+        android:id="@+id/collegeUser"
+        android:layout_width="130dp"
+        android:layout_height="35dp"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/textView2" />
-" />
+        android:layout_below="@+id/textView2"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="121dp"
+        android:text="Submit" />
+    " />
 
 </RelativeLayout>
