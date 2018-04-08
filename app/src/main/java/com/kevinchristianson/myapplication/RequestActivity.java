@@ -24,15 +24,19 @@ public class RequestActivity extends AppCompatActivity {
     EditText textRadius;
     EditText textDaysBrrw;
 
-    DatabaseReference mRootRef = FirebaseDatabase.getInstance().getReference();
-    DatabaseReference requests = mRootRef.child("Request");
+
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        final FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference ref = database.getReference("request");
+
+        ref.setValue("Hello,World!!!!!!");
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.request_page);
-
         //Get UI  elements
         buttonborrow = (Button) findViewById(R.id.article_heading);
         textItemBrrw = (EditText) findViewById(R.id.editTextItmBrrw);
@@ -43,7 +47,7 @@ public class RequestActivity extends AppCompatActivity {
         buttonborrow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                requests.setValue("hello world");
+                //database.setValue("hello world");
                 Intent intent = new Intent(RequestActivity.this, RequestActivity.class);
                 startActivity(intent);
                 finish();
