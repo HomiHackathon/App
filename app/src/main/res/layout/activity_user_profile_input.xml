@@ -10,25 +10,55 @@
     <TextView
         android:id="@+id/textView1"
         android:layout_width="match_parent"
-        android:layout_height="45dp"
+        android:layout_height="59dp"
         android:text="First Name:" />
+    <EditText
+        android:layout_width="80dp"
+        android:layout_height="59dp" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="56dp"
+        android:layout_above="@+id/textView3"
+        android:layout_alignParentStart="true"
         android:text="Last Name:" />
+
+    <EditText
+        android:layout_width="80dp"
+        android:layout_height="59dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView1" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="56dp"
+        android:layout_above="@+id/textView4"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="-170dp"
         android:text="College (if applicable):" />
+
+    <EditText
+        android:layout_width="59dp"
+        android:layout_height="80dp"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="match_parent"
         android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="170dp"
         android:text="Date of Birth:" />
+
+    <EditText
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2" />
+" />
 
 </RelativeLayout>
