@@ -30,10 +30,17 @@ public class LoginActivity extends AppCompatActivity {
         //Get Firebase auth instance
         auth = FirebaseAuth.getInstance();
 
+<<<<<<< HEAD
+        if (auth.getCurrentUser() != null) {
+            startActivity(new Intent(LoginActivity.this, ShareActivity.class));
+            finish();
+        }
+=======
 //        if (auth.getCurrentUser() != null) {
 //            startActivity(new Intent(LoginActivity.this, LoginActivity.class));
 //            finish();
 //        }
+>>>>>>> 9bc157d6ed17b1e177ea57e925bf71a107e628ed
 
         // set the view now
         setContentView(R.layout.activity_login);
@@ -54,7 +61,7 @@ public class LoginActivity extends AppCompatActivity {
         btnSignup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(LoginActivity.this, SignupActivity.class));
+                startActivity(new Intent(LoginActivity.this, ShareActivity.class));
             }
         });
 
