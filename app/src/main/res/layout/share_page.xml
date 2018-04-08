@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kevinchristianson.myapplication.ShareActivity">
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -19,44 +23,44 @@
         android:layout_height="50dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="70dp"
-        android:textSize="16sp"
-        android:text="Item:"/>
+        android:text="Item:"
+        android:textSize="16sp" />
 
     <EditText
-        android:scrollbars="horizontal"
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="75dp"
-        android:layout_marginTop="50dp"/>
+        android:layout_marginTop="50dp"
+        android:scrollbars="horizontal" />
 
     <TextView
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:layout_marginStart="180dp"
         android:layout_marginTop="70dp"
-        android:textSize="16sp"
-        android:text="Due Date:"/>
+        android:text="Due Date:"
+        android:textSize="16sp" />
 
     <EditText
-        android:scrollbars="horizontal"
-        android:inputType="datetime"
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"
         android:layout_marginEnd="20dp"
-        android:layout_marginTop="50dp"/>
+        android:layout_marginTop="50dp"
+        android:inputType="datetime"
+        android:scrollbars="horizontal" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="50dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"
-        android:layout_marginEnd="150dp"
-        android:text="Submit"
-        android:layout_marginTop="100dp"/>
+        android:layout_marginEnd="200dp"
+        android:layout_marginTop="100dp"
+        android:text="Submit" />
 
 
     <ScrollView
@@ -66,7 +70,28 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="150dp">
 
-        <include layout="@layout/share_page_element" />
+        <include layout= "@layout/share_page_element" />
+
     </ScrollView>
+
+    <Button
+        android:id="@+id/leftShare"
+        android:layout_width="12dp"
+        android:layout_height="420dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="220dp"
+        android:background="@android:color/transparent"
+        android:text="@string/btn_back" />
+
+    <Button
+        android:id="@+id/rightShare"
+        android:layout_width="13dp"
+        android:layout_height="420dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/leftShare"
+        android:background="@android:color/transparent"
+        android:text="@string/btn_forward" />
+
 
 </RelativeLayout>
