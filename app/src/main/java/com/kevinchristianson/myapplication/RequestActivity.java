@@ -24,6 +24,8 @@ import butterknife.OnClick;
 public class RequestActivity extends AppCompatActivity {
 
     Button buttonborrow;
+    Button rightBtn;
+    Button leftBtn;
     EditText textItemBrrw;
     EditText textItemCtgry;
     EditText textRadius;
@@ -36,6 +38,7 @@ public class RequestActivity extends AppCompatActivity {
     DatabaseReference radiusRef = mRootRef.child("Distance for Item");
     DatabaseReference daysBrrwRef = mRootRef.child("Number of Days Needed to Borrow");
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,12 +50,32 @@ public class RequestActivity extends AppCompatActivity {
         textItemCtgry = (EditText) findViewById(R.id.editTextItemctgry);
         textRadius = (EditText) findViewById(R.id.editTextRadius);
         textDaysBrrw = (EditText) findViewById(R.id.editTextdaysbrrw);
+        rightBtn = (Button) findViewById(R.id.rightShare);
+        leftBtn = (Button) findViewById(R.id.leftShare);
 
     }
 
     @Override
     protected void onStart() {
         super.onStart();
+
+        Button rightBtn = findViewById(R.id.rightShare);
+        rightBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(RequestActivity.this, MainActivity.class));
+                finish();
+            }
+        });
+
+        Button leftBtn = findViewById(R.id.leftShare);
+        leftBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(RequestActivity.this, ProfileActivity.class));
+                finish();
+            }
+        });
 
         itmBrrwdRef.addValueEventListener(new ValueEventListener() {
             @Override
@@ -114,7 +137,7 @@ public class RequestActivity extends AppCompatActivity {
                 radiusRef.setValue(textRadius.getText().toString());
                 daysBrrwRef.setValue(textDaysBrrw.getText().toString());
 
-                Intent intent = new Intent(RequestActivity.this, RequestActivity.class);
+                Intent intent = new Intent(RequestActivity.this, FeedActivity.class);
                 startActivity(intent);
                 finish();
             }
