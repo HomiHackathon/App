@@ -51,6 +51,9 @@
         <activity
             android:name=".SettingsActivity"
             android:label="@string/title_activity_settings" />
+        <activity
+            android:name=".RequestActivity"
+            android:label="@string/title_activity_settings" />
         <activity android:name=".CreditCardActivity" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
