@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.request_page);
 
 //
 //        findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
 //            }
 //        });
         //setContentView(R.layout.activity_main);
-        ButterKnife.bind(this);
+        //ButterKnife.bind(this);
     }
 
     @OnClick(R.id.button)

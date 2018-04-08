@@ -2,12 +2,15 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:weightSum="3">
+    android:weightSum="3"
+    android:layout_marginHorizontal="20dp">
+
 
     <TextView
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
+        android:textAlignment="center"
         android:text="laptop Charger"/>
 
     <View
@@ -20,6 +23,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="PB" />
+        android:textAlignment="center"
+        android:text="Share" />
 
 </LinearLayout>
