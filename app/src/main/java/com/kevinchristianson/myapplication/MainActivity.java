@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.request_page);
+        setContentView(R.layout.activity_user_profile_input);
 
 //
 //        findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {

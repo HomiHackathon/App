@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -104,10 +103,10 @@ public class UserProfileInputActivity extends AppCompatActivity {
         mButtonSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mFirstNameRef.setValue(mFirstName);
-                mLastNameRef.setValue(mLastName);
-                mCollegeRef.setValue(mCollege);
-                mBirthdayRef.setValue(mBday);
+                mFirstNameRef.setValue(mFirstName.getText().toString());
+                mLastNameRef.setValue(mLastName.getText().toString());
+                mCollegeRef.setValue(mCollege.getText().toString());
+                mBirthdayRef.setValue(mBday.getText().toString());
             }
         });
 
