@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="5dp"
-    android:visibility="visible"
-    tools:context="com.codingdemos.profile.MainActivity">
+    android:visibility="visible">
 
     <ImageView
         android:id="@+id/ivProfile"
@@ -26,7 +25,7 @@
         android:layout_below="@id/ivProfile"
         android:layout_centerHorizontal="true"
         android:gravity="center"
-        android:text="@string/user_name"
+        android:text="Some Guy"
         android:textSize="22sp"
         android:textStyle="bold" />
 
@@ -37,7 +36,7 @@
         android:layout_below="@+id/tvName"
         android:layout_centerHorizontal="true"
         android:gravity="center"
-        android:text="@string/miles"
+        android:text="Sharing Since 1999"
         android:textSize="18sp"
         android:textStyle="italic" />
 
