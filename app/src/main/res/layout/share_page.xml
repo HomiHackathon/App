@@ -62,7 +62,6 @@
         android:layout_marginTop="100dp"
         android:text="Submit" />
 
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="87dp"
@@ -70,10 +69,108 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="150dp">
 
-        <include layout= "@layout/share_page_element" />
+        <include layout= "@layout/share_page_element2" />
 
     </ScrollView>
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="200dp">
+
+        <include layout= "@layout/share_page_element3" />
+
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="250dp">
+
+        <include layout= "@layout/share_page_element4" />
+
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="300dp">
+
+        <include layout= "@layout/share_page_element1" />
+
+    </ScrollView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="350dp">
+
+        <include layout= "@layout/share_page_element5" />
+
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="400dp">
+
+        <include layout= "@layout/share_page_element6" />
+
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="450dp">
+
+        <include layout= "@layout/share_page_element7" />
+
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="500dp">
+
+        <include layout= "@layout/share_page_element8" />
+
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="550dp">
+
+        <include layout= "@layout/share_page_element9" />
+
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="600dp">
+
+        <include layout= "@layout/share_page_element10" />
+
+    </ScrollView>
+    
     <Button
         android:id="@+id/leftShare"
         android:layout_width="12dp"

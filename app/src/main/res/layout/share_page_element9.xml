@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:textAlignment="center"
-        android:text="laptop Charger"/>
+        android:text="Mini Fridge"/>
 
     <View
         android:layout_width="0dp"
