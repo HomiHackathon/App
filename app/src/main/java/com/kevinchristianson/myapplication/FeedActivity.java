@@ -38,8 +38,8 @@ public class FeedActivity extends AppCompatActivity {
                         recyclerViewAdapter.notifyItemRemoved(adapterData.size());
                         for (int i = 0; i < 15; i++) {
                             adapterData.add("Item" + (adapterData.size() + 1));
-                            recyclerViewAdapter.notifyItemInserted(adapterData.size());
-                        }
+                        recyclerViewAdapter.notifyItemInserted(adapterData.size());
+                    }
                         recyclerViewAdapter.setLoaded();
                     }
                 }, 2000);
@@ -49,16 +49,16 @@ public class FeedActivity extends AppCompatActivity {
     }
     private List<String> getFirstData(){
         List<String> listObject = new ArrayList<String>();
-        listObject.add("one");
-        listObject.add("one");
-        listObject.add("one");
-        listObject.add("one");
-        listObject.add("one");
-        listObject.add("one");
-        listObject.add("one");
-        listObject.add("one");
-        listObject.add("one");
-        listObject.add("one");
+        listObject.add("Skateboard");
+        listObject.add("Pencil");
+        listObject.add("Life Purpose");
+        listObject.add("Laptop");
+        listObject.add("Morrison's - The Bluest Eye");
+        listObject.add("Car for the weekend");
+        listObject.add("Car for the week");
+        listObject.add("Album by the Weeknd");
+        listObject.add("Album by the Weeknd but not starboy pls");
+        listObject.add("Record Player");
         return listObject;
     }
 }
