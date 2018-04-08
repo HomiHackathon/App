@@ -63,7 +63,7 @@ public class RequestActivity extends AppCompatActivity {
         rightBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(RequestActivity.this, MainActivity.class));
+                startActivity(new Intent(RequestActivity.this, ShareActivity.class));
                 finish();
             }
         });

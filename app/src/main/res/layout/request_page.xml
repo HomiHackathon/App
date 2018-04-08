@@ -38,8 +38,8 @@
 
     <EditText
         android:id="@+id/editTextItmBrrw"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="118dp"
+        android:layout_height="163dp"
         android:layout_marginBottom="24dp"
         android:layout_marginEnd="24dp"
         android:layout_marginStart="8dp"
@@ -49,14 +49,15 @@
         android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="0.766"
         app:layout_constraintStart_toEndOf="@+id/leftShare"
         app:layout_constraintTop_toBottomOf="@+id/article_heading"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/editTextItemctgry"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="118dp"
+        android:layout_height="163dp"
         android:layout_marginBottom="24dp"
         android:layout_marginEnd="24dp"
         android:layout_marginStart="24dp"
@@ -65,13 +66,15 @@
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.641"
         app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/article_heading" />
+        app:layout_constraintTop_toBottomOf="@+id/article_heading"
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/editTextRadius"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="118dp"
+        android:layout_height="163dp"
         android:layout_marginBottom="24dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -87,14 +90,14 @@
 
     <EditText
         android:id="@+id/editTextdaysbrrw"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="118dp"
+        android:layout_height="163dp"
         android:layout_marginBottom="24dp"
         android:layout_marginEnd="24dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
-        android:hint="Days Borrowed"
         android:ems="10"
+        android:hint="Days Borrowed"
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -107,10 +110,12 @@
         android:layout_height="176dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
         android:background="@android:color/transparent"
         android:text="@string/btn_back"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="334dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/rightShare"
@@ -118,9 +123,11 @@
         android:layout_height="191dp"
         android:layout_alignParentEnd="true"
         android:layout_alignTop="@+id/leftShare"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
         android:background="@android:color/transparent"
         android:text="@string/btn_forward"
-        tools:layout_editor_absoluteX="374dp"
-        tools:layout_editor_absoluteY="319dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
