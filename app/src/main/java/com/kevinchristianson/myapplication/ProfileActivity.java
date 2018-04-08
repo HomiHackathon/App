@@ -1,6 +1,7 @@
 
 package com.kevinchristianson.myapplication;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.PorterDuff;
@@ -21,11 +22,27 @@ public class ProfileActivity extends AppCompatActivity {
 
     ImageView mIcon;
     Button mFollow;
+    Button rightBtn;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        rightBtn = (Button) findViewById(R.id.rightShare);
+
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
+
+        Button rightBtn = findViewById(R.id.rightShare);
+        rightBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ProfileActivity.this, ShareActivity.class));
+                finish();
+            }
+        });
 
         mIcon = findViewById(R.id.ivProfile);
         Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.steviep);
@@ -46,8 +63,8 @@ public class ProfileActivity extends AppCompatActivity {
             }
         });
 
-        String k = FirebaseAuth.getInstance().getCurrentUser().getUid();
-        ((TextView) findViewById(R.id.tvName)).setText(k);
+//        String k = FirebaseAuth.getInstance().getCurrentUser().getUid();
+//        ((TextView) findViewById(R.id.tvName)).setText(k);
     }
 
 }
