@@ -38,18 +38,11 @@ public class SignupActivity extends AppCompatActivity {
         progressBar = (ProgressBar) findViewById(R.id.progressBar);
         btnResetPassword = (Button) findViewById(R.id.btn_reset_password);
 
-        /*
-        btnResetPassword.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(SignupActivity.this, ResetPasswordActivity.class));
-            }
-        });
-        */
-
         btnSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent intent = new Intent(SignupActivity.this, LoginActivity.class);
+                startActivity(intent);
                 finish();
             }
         });
@@ -91,7 +84,11 @@ public class SignupActivity extends AppCompatActivity {
                                     Toast.makeText(SignupActivity.this, "Authentication failed." + task.getException(),
                                             Toast.LENGTH_SHORT).show();
                                 } else {
+<<<<<<< HEAD
                                     startActivity(new Intent(SignupActivity.this, ShareActivity.class));
+=======
+                                    startActivity(new Intent(SignupActivity.this, ProfileActivity.class));
+>>>>>>> 9bc157d6ed17b1e177ea57e925bf71a107e628ed
                                     finish();
                                 }
                             }
