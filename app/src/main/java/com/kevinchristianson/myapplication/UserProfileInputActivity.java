@@ -1,11 +1,13 @@
 package com.kevinchristianson.myapplication;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -13,6 +15,8 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import org.w3c.dom.Text;
+
+import butterknife.OnClick;
 
 public class UserProfileInputActivity extends AppCompatActivity {
 
@@ -22,11 +26,17 @@ public class UserProfileInputActivity extends AppCompatActivity {
     EditText mCollege;
     EditText mBday;
 
-    DatabaseReference mRootRef = FirebaseDatabase.getInstance().getReference();
+    DatabaseReference mRootRef = FirebaseDatabase.getInstance().getReference().child(FirebaseAuth.getInstance().getCurrentUser().getUid());
     DatabaseReference mFirstNameRef = mRootRef.child("first name");
     DatabaseReference mLastNameRef = mRootRef.child("last name");
     DatabaseReference mCollegeRef = mRootRef.child("college");
     DatabaseReference mBirthdayRef = mRootRef.child("birthday");
+
+    @OnClick(R.id.button3)
+    void onClick() {
+        Intent intent = new Intent(this, ShareActivity.class);
+        startActivity(intent);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -107,8 +117,16 @@ public class UserProfileInputActivity extends AppCompatActivity {
                 mLastNameRef.setValue(mLastName.getText().toString());
                 mCollegeRef.setValue(mCollege.getText().toString());
                 mBirthdayRef.setValue(mBday.getText().toString());
+
             }
         });
 
+
+
+        }
+
+
+
     }
-}
+
+
