@@ -69,7 +69,8 @@
         <activity
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps" />
-        <activity android:name=".usersignin_page"></activity>
+        <activity android:name=".usersignin_page" />
+        <activity android:name=".UserProfileInputActivity"></activity>
     </application>
 
 </manifest>
