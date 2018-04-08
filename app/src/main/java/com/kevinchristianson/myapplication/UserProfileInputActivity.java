@@ -32,12 +32,6 @@ public class UserProfileInputActivity extends AppCompatActivity {
     DatabaseReference mCollegeRef = mRootRef.child("college");
     DatabaseReference mBirthdayRef = mRootRef.child("birthday");
 
-    @OnClick(R.id.button3)
-    void onClick() {
-        Intent intent = new Intent(this, ShareActivity.class);
-        startActivity(intent);
-    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,6 +44,7 @@ public class UserProfileInputActivity extends AppCompatActivity {
         mBday = (EditText) findViewById(R.id.birthdayUser);
 
     }
+
     @Override
     protected void onStart() {
         super.onStart();
@@ -118,15 +113,11 @@ public class UserProfileInputActivity extends AppCompatActivity {
                 mCollegeRef.setValue(mCollege.getText().toString());
                 mBirthdayRef.setValue(mBday.getText().toString());
 
+                //database.setValue("hello world");
+                Intent intent = new Intent(UserProfileInputActivity.this, ShareActivity.class);
+                startActivity(intent);
+                finish();
             }
         });
-
-
-
-        }
-
-
-
     }
-
-
+}
