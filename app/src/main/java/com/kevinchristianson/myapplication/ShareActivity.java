@@ -20,7 +20,7 @@ public class ShareActivity extends AppCompatActivity {
         rightBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(ShareActivity.this, MainActivity.class));
+                startActivity(new Intent(ShareActivity.this, FeedActivity.class));
                 finish();
             }
         });
